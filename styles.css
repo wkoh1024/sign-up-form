@@ -47,6 +47,10 @@ html, body {
     height: 100vh;
 }
 
+#head1, #head2, #head3, p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #background-image {
     height: 100vh;
     width: 40vw;
@@ -60,7 +64,7 @@ html, body {
 }
 
 #head1 {
-	flex: 2;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -75,7 +79,6 @@ html, body {
 
 #head1, #head2, #head3 {
 	padding-left: 3%;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 500;
 	padding-right: 20%;
 }
@@ -87,15 +90,16 @@ em {
 #head2 > h2 {
 	font-size: larger;
 	margin-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 #head3 {
-	flex: 2;
+	flex: 1;
 	font-size: small;
 }
 
 #head2 {
-	flex: 1;
+	flex: .7;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -114,9 +118,31 @@ label {
 form {
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 10px;
+	row-gap: 25px;
 }
 
 body {
 	display: flex;
+}
+
+#head3 > button {
+	margin: 5% 0;
+	background: #596d48;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 40px;
+	color: white;
+}
+
+#footer {
+	position: absolute;
+	color: white;
+	bottom: 1%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+
+}
+
+#footer a:visited {
+	color: white;
 }
