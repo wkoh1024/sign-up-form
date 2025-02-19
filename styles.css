@@ -43,6 +43,11 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+	font-family: 'Norse-Bold';
+	src: url(./assets/Norse-Bold.otf);
+}
+
 html, body {
     height: 100vh;
 }
@@ -78,7 +83,7 @@ html, body {
 }
 
 #head1, #head2, #head3 {
-	padding-left: 3%;
+	padding-left: 5%;
 	font-weight: 500;
 	padding-right: 20%;
 }
@@ -121,7 +126,7 @@ form {
 	row-gap: 25px;
 }
 
-body {
+#main {
 	display: flex;
 }
 
@@ -140,9 +145,35 @@ body {
 	bottom: 1%;
 	left: 20%;
 	transform: translate(-50%, -50%);
-
 }
 
 #footer a:visited {
 	color: white;
+}
+
+.logo {
+	position: absolute;
+	width: 40vw;
+	max-width: 666.891px;
+	background-color: rgb(0, 0, 0, .4);
+	top: 20%;
+}
+
+.logo > div > img {
+	width: 120px;
+	opacity: 100%;
+}
+
+.logo > div > h1 {
+	font-family: Norse-Bold;
+	color: white;
+	font-size: 100px;
+}
+
+.logo > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
 }
