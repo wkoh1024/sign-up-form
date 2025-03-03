@@ -75,7 +75,11 @@ html, body {
 	justify-content: flex-end;
 	padding-bottom: 5%;
 	line-height: 1.3;
-	font-size: larger;
+	font-size: 25px;
+}
+
+#head1 > h2 {
+	font-weight: 550;
 }
 
 #head1, #head3 {
@@ -116,6 +120,10 @@ em {
 	flex-basis: 30%;;
 }
 
+input {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 
 #form {
 	display: flex;
@@ -142,8 +150,22 @@ form {
 	background: #596d48;
 	border-radius: 5px;
 	border: none;
+	font-size: 16px;
+	font-weight: 550;
 	padding: 10px 40px;
 	color: white;
+	width: 200px;
+	height: auto;
+}
+
+#head3 div {
+	font-size: 15px;
+}
+
+#head3 div > a {
+	color: #596d48;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 #footer {
@@ -185,4 +207,9 @@ form {
 
 #container {
 	display: flex;
+}
+
+#head2, button {
+	background-color: white;
+	filter: drop-shadow(0px 9px 7px rgba(0, 0, 0, 0.3));
 }
