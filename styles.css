@@ -117,7 +117,8 @@ em {
 .form-group {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 30%;;
+	flex-basis: 30%;
+	gap: 5px;
 }
 
 input {
@@ -127,8 +128,8 @@ input {
 
 #form {
 	display: flex;
-	gap: 100px;
-	row-gap: 20px;
+	gap: 72px;
+	row-gap: 10px;
 }
 
 label {
@@ -143,19 +144,6 @@ form {
 
 #main {
 	display: flex;
-}
-
-#head3 > button {
-	margin: 5% 0;
-	background: #596d48;
-	border-radius: 5px;
-	border: none;
-	font-size: 16px;
-	font-weight: 550;
-	padding: 10px 40px;
-	color: white;
-	width: 200px;
-	height: auto;
 }
 
 #head3 div {
@@ -211,5 +199,29 @@ form {
 
 #head2, button {
 	background-color: white;
-	filter: drop-shadow(0px 9px 7px rgba(0, 0, 0, 0.3));
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}	
+
+#confirm-password:invalid, #password:invalid {
+	border: 1px solid #b91c1c ;
+}
+
+input {
+	padding: 5px 0px;
+	border-radius: 5px;
+	padding-left: 8px;
+}
+
+[type="submit"] {
+	background-color: #596d48;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 550;
+	color: white;
+	width: 200px;
+	margin-top: 28px;
+	margin-bottom: 23px;
 }
